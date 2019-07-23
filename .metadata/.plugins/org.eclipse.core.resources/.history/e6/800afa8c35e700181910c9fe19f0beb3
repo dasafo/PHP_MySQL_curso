@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+    
+   <?php
+   
+    include("../modelo/ManejoObjetos.php");
+    
+    try{
+        
+        $miconexion=new PDO('mysql:host=localhost; dbname=bbddblog_php', 'roor', 'Kromosoma_85');
+        
+        $miconexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        
+        $ManejoObjetos=new ManejoObjetos($miconexion);
+        
+        
+        
+    }catch (Exception $e){
+        
+        die("Error: " . $e->getMessage());
+    }
+           
+   
+   
+		
+   ?>
+	
+</body>
+    
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:SistemaLogin_39" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ProyectoBlog" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:POO" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:CRUD_POO_49" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ImgenesServidor_50" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ArchivosBBDD_51" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:Sesiones&amp;Cookies" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:Encriptar" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:SistemaLogin_40" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:PerfilesUsuario_55" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:CorreosElectronicos_52" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ProyectoBlog_POO_54" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:PDO" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:Paginacion_46" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:CRUD_45" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ModeloVistaControlador_47" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ArchivosBBDD" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:BBDD" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:ProyectoBlog_Procedimientos_53" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:php" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:prueba" serverId="PHP Built-in Server at localhost"/>
+  <module moduleId="org.eclipse.php.builtin.server.core.moduleFactory:CRUD" serverId="PHP Built-in Server at localhost"/>
+</modules>

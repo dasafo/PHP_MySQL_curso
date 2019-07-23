@@ -1,0 +1,10 @@
+<?php
+    
+    require_once ("../modelo/ProductosModelo.php"); 
+    
+    require_once ("../vista/ProductosView.php");
+
+		
+		
+?>
+	

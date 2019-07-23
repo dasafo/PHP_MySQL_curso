@@ -1,0 +1,39 @@
+<?php 
+    
+    require "DevuelveProductos_37_II.php";
+    
+    $productos=new DevuelveProductos();
+    
+    $arrayProductos=$productos->getProductos();
+
+
+
+
+?>
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+    
+   <?php
+    
+   for($arrayProductos as $elemento){
+       
+       
+   }
+		
+		
+   ?>
+	
+</body>
+    
+</html>

@@ -1,0 +1,43 @@
+<?php
+    
+	//REcibimos los datos de la imagen
+	
+    $nombreImagen=$_FILES["imagen"]["name"];
+    
+    $tipoImagen=$_FILES["imagen"]["type"];
+    
+    $tamagnoImagen=$_FILES["imagen"]["size"];
+    
+   // echo $_FILES['imagen']["tmp_name"] . "<br>";
+   // echo $_FILES['imagen']["name"] . "<br>";
+    // echo $_FILES['imagen']["type"] . "<br>";
+    
+    echo $tipoImagen;
+    
+    
+    if($tamagnoImagen<=1000000){ //Si el tamaño de la imagen es menor de 1000000 bytes(1Mb) entonces se ejecuta lo siguiente
+    
+        if($tipoImagen=="image/jpeg" || $tipoImagen=="image/jpg" || $tipoImagen=="image/gif" || $tipoImagen=="image/png"){
+            
+       
+        
+    //Ruta de la carpeta destino en servidor
+    
+    $carpetaDestino=$_SERVER["DOCUMENT_ROOT"] . "/../../../../../descargas/"; //Lo baja por defecto temporalmente en "/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/htdocs
+                                                                              //Lo almacenamos en Documents/PHP/Curso/descargas/
+    
+    //Moveos la imagen de la carpeta temporal al directorio escogido
+    
+    move_uploaded_file($_FILES["imagen"]["tmp_name"], $carpetaDestino.$nombreImagen);
+
+        }else{
+            echo "No es una imagen válida";
+        }
+    
+    }else{
+        
+        echo "El tamaño es muy grande";
+    }
+		
+?>
+	

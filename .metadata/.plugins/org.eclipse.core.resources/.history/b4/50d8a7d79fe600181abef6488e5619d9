@@ -1,0 +1,25 @@
+<?php
+    
+	$textoMail=$_POST["comentario"];
+	
+	$destinatario=$_POST["email"];
+	
+	$asunto=$_POST["asunto"];
+	
+	$headers="MIME-Version: 1.0\r\n";
+	$headers.="Content-type: text/html; charset=iso-8859-1\r\n"; //con .= concatemaos variables
+	$headers.="From: Prueba David < salas.forever@gmail.com >\r\n";
+	
+    $exito=mail($destinatario, $asunto, $textoMail, $headers);
+    
+    if($exito){
+        
+        echo "Mensaje enviado con exito";
+    }else{
+        
+        echo "Ha habido un ERROR";
+    }
+
+
+		
+?>

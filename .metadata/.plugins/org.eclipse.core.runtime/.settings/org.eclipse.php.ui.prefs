@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.php.core.workspaceDefaultLocale=en_US
+org.eclipse.php.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="php_new_file_context" deleted\="false" description\="Simple php file" enabled\="true" id\="org.eclipse.php.ui.editor.templates.php.author" name\="New simple PHP file">&lt;?php\n\t${cursor}\n\n\n?&gt;</template><template autoinsert\="false" context\="php_new_file_context" deleted\="false" description\="html 4.01 frameset" enabled\="true" id\="org.eclipse.php.ui.editor.templates.php.html.frameset" name\="New PHP file - HTML frameset">&lt;\!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"&gt;\n&lt;html&gt;\n&lt;head&gt;\n&lt;meta http-equiv\="Content-Type" content\="text/html; charset\=${encoding}"&gt;\n&lt;title&gt;Insert title here&lt;/title&gt;\n&lt;/head&gt;\n\n&lt;body&gt;\n    \n   &lt;?php\n    \n\t\t${cursor}\n\t\t\n   ?&gt;\n\t\n&lt;/body&gt;\n    \n&lt;/html&gt;</template></templates>
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

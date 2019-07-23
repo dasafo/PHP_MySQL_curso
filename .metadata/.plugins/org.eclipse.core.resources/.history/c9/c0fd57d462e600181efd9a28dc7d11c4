@@ -1,0 +1,26 @@
+<?php
+    
+    class ProductosModelo{
+        
+        private $db;
+        
+        private $productos;
+        
+        public function __construct(){
+            
+            require_once ('Conectar.php');
+            
+        }
+        
+        public function getProductos(){
+            
+            
+        }
+        
+        
+    }
+
+
+		
+?>
+	

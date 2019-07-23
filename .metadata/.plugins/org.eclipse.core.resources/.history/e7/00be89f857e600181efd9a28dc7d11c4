@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+    
+   <?php
+    
+   try{
+       
+       $base=new PDO("mysql:host=localhost; dbname=curso_php", "root", "Kromosoma_85");
+       
+       $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+       
+       $base->exec("SET CHARACTER SET utf8");
+       
+       $tamanoPaginas=3; //Para decirle cuantos registros por pagina queremos
+       
+       $pagina=1; //Nos dice la página que nos encontraremos cuando cargemos por primera vez la Web
+       
+       $empezarDesde=($pagina-1)*$tamanoPaginas; //para almacenar el numero de registro con que empieza cada página
+       
+       $sqlTotal="SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS 
+                    WHERE SECCIÓN='DEPORTES'"; //hacemos una llamada SQL para saber cuantos registros nos devuelve la consulta
+       
+       $resultado=$base->prepare($sqlTotal);
+       
+       $resultado->execute(array());
+       
+       $numFilas=$resultado->rowCount(); //para que cuente las filas que tenemos dentro del array($resultado)
+       
+       $totalPaginas=ceil($numFilas/$tamanoPaginas); //PAra calcular las paginas que necesitaremos, con ceil() redondeamos el resultado
+       
+       echo "Número de registros de la consulta: " . $numFilas . "<br>";
+       echo "Mostramos " . $tamanoPaginas . " registros por página. <br>";
+       echo "Mostrando la página " . $pagina . " de " . $totalPaginas . ".<br>";
+       
+       
+       
+       $resultado->closeCursor();
+       
+       $sqlLimite="SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE SECCIÓN='DEPORTES' 
+                    LIMIT $empezarDesde,$tamanoPaginas"; //con LIMIT si le decimos por ejemplo que muestre primero desde el primer registro y 3 registros más, sería LIMIT 0,3
+       
+       $resultado=$base->prepare($sqlLimite);
+       
+       $resultado->execute(array());
+       
+       while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){
+       
+       echo "Nombre Artículo: " . $registro["NOMBREARTÍCULO"] . " Sección: " . $registro["SECCIÓN"] . " Precio: " . $registro["PRECIO"] .
+       " País Origen: " . $registro["PAÍSDEORIGEN"] . "<br>";
+       }
+       
+   }catch(Exception $e){
+       
+       echo "Línea de error: " . $e->getLine();
+       
+   }
+		
+   ?>
+	
+</body>
+    
+</html>

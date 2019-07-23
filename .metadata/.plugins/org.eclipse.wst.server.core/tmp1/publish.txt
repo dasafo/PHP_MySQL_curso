@@ -1,0 +1,20 @@
+#PHP Server publish data
+#Tue Nov 13 12:52:39 CET 2018
+org.eclipse.php.builtin.server.core.moduleFactory\:php=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/php
+org.eclipse.php.builtin.server.core.moduleFactory\:ArchivosBBDD_51=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/ArchivosBBDD_51
+org.eclipse.php.builtin.server.core.moduleFactory\:ProyectoBlog_Procedimientos_53=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/ProyectoBlog_Procedimientos_53
+org.eclipse.php.builtin.server.core.moduleFactory\:ModeloVistaControlador_47=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/ModeloVistaControlador_47
+org.eclipse.php.builtin.server.core.moduleFactory\:Sesiones&Cookies=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/Sesiones&Cookies
+org.eclipse.php.builtin.server.core.moduleFactory\:SistemaLogin_40=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/SistemaLogin_40
+org.eclipse.php.builtin.server.core.moduleFactory\:CorreosElectronicos_52=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/CorreosElectronicos_52
+org.eclipse.php.builtin.server.core.moduleFactory\:ImgenesServidor_50=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/ImgenesServidor_50
+org.eclipse.php.builtin.server.core.moduleFactory\:PerfilesUsuario_55=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/PerfilesUsuario_55
+org.eclipse.php.builtin.server.core.moduleFactory\:POO=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/POO
+org.eclipse.php.builtin.server.core.moduleFactory\:ProyectoBlog_POO_54=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/ProyectoBlog_POO_54
+org.eclipse.php.builtin.server.core.moduleFactory\:CRUD_45=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/CRUD_45
+org.eclipse.php.builtin.server.core.moduleFactory\:CRUD_POO_49=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/CRUD_POO_49
+org.eclipse.php.builtin.server.core.moduleFactory\:Encriptar=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/Encriptar
+org.eclipse.php.builtin.server.core.moduleFactory\:Paginacion_46=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/Paginacion_46
+org.eclipse.php.builtin.server.core.moduleFactory\:PDO=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/PDO
+org.eclipse.php.builtin.server.core.moduleFactory\:SistemaLogin_39=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/SistemaLogin_39
+org.eclipse.php.builtin.server.core.moduleFactory\:BBDD=/home/david/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/htdocs/BBDD

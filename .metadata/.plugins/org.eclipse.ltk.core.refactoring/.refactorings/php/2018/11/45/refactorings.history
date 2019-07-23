@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;php/EjemploOperadores_10.html&apos; to &apos;OperadoresIncDecr_9_III.php&apos;" description="Rename resource &apos;EjemploOperadores_10.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="EjemploOperadores_10.html" name="OperadoresIncDecr_9_III.php" stamp="1541409578195" updateReferences="true"/>
+</session>

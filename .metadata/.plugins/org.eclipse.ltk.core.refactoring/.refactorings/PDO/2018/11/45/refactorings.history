@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;ConexionPDO_33.php&apos; to &apos;PDO&apos;" description="Move &apos;ConexionPDO_33.php&apos; to &apos;PDO&apos;" destination="/PDO" element1="/BBDD/ConexionPDO_33.php" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1541703875230" updateReferences="true"/>
+</session>

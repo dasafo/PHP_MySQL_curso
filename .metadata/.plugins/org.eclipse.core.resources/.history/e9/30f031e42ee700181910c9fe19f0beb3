@@ -1,0 +1,14 @@
+<?php
+    
+    class ObjetoBLog{
+        
+        private $Id;
+        private $Titulo;
+        private $Fecha;
+        private $Comentario;
+        private $Imagen;
+    }
+
+		
+?>
+	

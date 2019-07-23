@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+
+
+
+</head>
+
+<body>
+    
+   <?php 
+    
+   $mibusqueda=$_GET["buscar"]; //Almacenamos en esta variable lo que tengamos en la celda al darle al botón(submit)
+   
+   $mipag=$_SERVER["PHP_SELF"]; //con server le decimos a la pagina del servidor que tiene que llamar, y php_self le decimos que a ella misma
+   
+   if($mibusqueda!=null){
+       
+       ejecutaConsulta($mibusqueda);
+   }else{
+       
+       echo("<form action='" . $mipag . "' method='get'>
+           
+           <label>Buscar: <input type='text' name='buscar'></label>
+
+            <input type='submit' name='enviando' value='Dale!'>
+
+               </form>");
+   }
+    
+    
+    
+    
+    
+   ?>
+	
+	
+</body>
+
+</html>

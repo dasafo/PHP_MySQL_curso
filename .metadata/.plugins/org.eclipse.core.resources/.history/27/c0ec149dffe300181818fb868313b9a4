@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+    
+   <?php
+   
+    $busquedaSec=$_POST["seccion"];
+    $busquedaPorig=$_POST["p_orig"];
+    
+       try{
+           
+           $base=new PDO('mysql:host=localhost; dbname=curso_php', 'root', 'Kromosoma_85');
+           
+           $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING); //Para que genere el objeto del error que nos saldrá en el catch, sino nos nos saldrá nada si se produce un error cuando sea llamado por $e
+           
+           $base->exec("SET CHARACTER SET utf8");
+           
+           //$sql="SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE NOMBREARTÍCULO = :n_art"; //si fuera con un array normal se sustituye :n_art(array asocietivo) por un ?
+           $sql="SELECT NOMBREARTÍCULO, SECCIÓN, PRECIO, PAÍSDEORIGEN FROM PRODUCTOS WHERE SECCIÓN= :SECC AND PAÍSDEORIGEN= :PORIG";
+           
+           
+           $resultado=$base->prepare($sql);
+           
+          // $resultado->execute(array($busqueda)); //le pasamos a SQL(?) destornillador, para un arrya normal
+          // $resultado->execute(array(":n_art"=>$busqueda)); //para poder usar un array asociativo se añade ":n_art"=>
+           $resultado->execute(array(":SECC"=>$busquedaSec, ":PORIG"=>$busquedaPorig)); //también para un Array asociativo
+           
+           while($registro=$resultado->fetch(PDO::FETCH_ASSOC)){ //con fetch_assoc se recorre la tabla linea a linea
+               
+               echo "Nombre Artículo: " . $registro['NOMBREARTÍCULO'] . " Sección: " . $registro['SECCIÓN'] . 
+                   " Precio: " . $registro['PRECIO'] . " País de Origen: " . $registro['PAÍSDEORIGEN'] . "<br>";
+           }
+           
+           $resultado->closeCursor(); //cerramos la lista
+           
+                                 
+       }catch(Exception $e){
+           
+           die('Error en la Conexion: ' . $e->getMessage());
+           
+       }finally{
+           
+           $base=null; //para que vacie la memoria
+       }
+		
+		
+   ?>
+	
+</body>
+    
+</html>

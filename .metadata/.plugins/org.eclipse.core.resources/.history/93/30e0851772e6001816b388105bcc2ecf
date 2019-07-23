@@ -1,0 +1,27 @@
+<?php
+    
+	//REcibimos los datos de la imagen
+	
+    $nombreImagen=$_FILES["imagen"]["name"];
+    
+    $tipoImagen=$_FILES["imagen"]["type"];
+    
+    $tamagnoImagen=$_FILES["imagen"]["size"];
+    
+    echo $_FILES['imagen']["size"];
+    
+    
+    
+    //Ruta de la carpeta destino en servidor
+    
+    $carpetaDestino=$_SERVER["DOCUMENT_ROOT"] . "/";
+    
+    //Moveos la imagen de la carpeta temporal al directorio escogido
+    
+    move_uploaded_file($_FILES["imagen"]["tmp_name"], $carpetaDestino.$nombreImagen);
+
+
+    
+		
+?>
+	

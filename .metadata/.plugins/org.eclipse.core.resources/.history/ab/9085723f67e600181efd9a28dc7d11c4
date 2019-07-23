@@ -1,0 +1,16 @@
+<?php
+    
+    require_once ("modelo/PersonasModelo.php"); 
+    
+    $producto=new PersonasModelo();
+    $matrizProductos=$producto->getProductos();
+    
+    
+    require_once ("vista/PersonasView.php");
+    
+    
+
+		
+		
+?>
+	

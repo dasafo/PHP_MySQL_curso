@@ -1,0 +1,26 @@
+<?php
+    
+    class ObjetoBLog{
+        
+        private $Id;
+        private $Titulo;
+        private $Fecha;
+        private $Comentario;
+        private $Imagen;
+        
+        
+        public function getId(){
+            
+            return $this->Id;
+            
+        }
+        
+        public function setId(){
+            
+            $this->Id=$Id;
+        }
+    }
+
+		
+?>
+	

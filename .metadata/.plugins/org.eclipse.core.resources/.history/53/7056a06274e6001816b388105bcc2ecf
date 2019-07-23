@@ -1,0 +1,28 @@
+<?php
+    
+	//REcibimos los datos de la imagen
+	
+    $nombreImagen=$_FILES["imagen"]["name"];
+    
+    $tipoImagen=$_FILES["imagen"]["type"];
+    
+    $tamagnoImagen=$_FILES["imagen"]["size"];
+    
+    echo $_FILES['imagen']["tmp_name"] . "<br>";
+    echo $_FILES['imagen']["name"] . "<br>";
+    echo $_FILES['imagen']["type"] . "<br>";
+    
+    
+    //Ruta de la carpeta destino en servidor
+    
+    $carpetaDestino=$_SERVER["DOCUMENT_ROOT"] . "..../descargas/"; ///Lo baja por defecto temporalmente en "/Documents/PHP/Curso/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/htdocs
+    
+    //Moveos la imagen de la carpeta temporal al directorio escogido
+    
+    move_uploaded_file($_FILES["imagen"]["tmp_name"], $carpetaDestino.$nombreImagen);
+
+
+    
+		
+?>
+	
